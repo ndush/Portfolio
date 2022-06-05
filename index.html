@@ -14,7 +14,7 @@
   <body>
     <nav class="navbar">
       <div class="navbar-container">
-        <a href="/" class="navbar-links">Home</a>
+        <a href="#main-container" class="navbar-links">Home</a>
 
         <a href="#Portfolio" class="navbar-links">Portfolio</a>
 
@@ -28,7 +28,7 @@
     </nav>
 
     <main>
-      <div class="main-container">
+      <div id="main-container">
         <div style="background-image: url('images/a.jpg')" class="image">
           <h2>
             I am software developer student at Moringa School aspiring to become
@@ -39,7 +39,7 @@
     </main>
     <section id="Portfolio">
       <div class="portfolio-wrap">
-        <div class="image">
+        <div id="image">
           <img src="images/c.jpeg" alt="me" />
         </div>
         <div class="about">
@@ -71,14 +71,14 @@
               id="fname"
               name="firstname"
               placeholder="First Name"
-            />
+             required/>
 
             <label for="lname">Last Name</label>
             <input
               type="text"
               id="lname"
               name="lastname"
-              placeholder="Last Name"
+              placeholder="Last Name" required
             />
 
             <label for="country">Country</label>
@@ -93,7 +93,7 @@
               id="subject"
               name="subject"
               placeholder="Write to me.."
-              style="height: 200px"
+              style="height: 200px"required
             ></textarea>
 
             <input type="submit" value="Submit" />
