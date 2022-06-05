@@ -1,0 +1,30 @@
+body {
+  background: rgb(242, 98, 20);
+}
+.navbar-container {
+  float: none;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.fa {
+  padding: 10px;
+  text-align: center;
+  margin: 5px 2px;
+  font-size: 50px;
+  width: 50px;
+}
+
+.fa-twitter {
+  color: white;
+}
+.fa-linkedin {
+  color: white;
+}
+.fa-instagram {
+  color: white;
+}
+.fa:hover {
+  opacity: 0.9;
+}
