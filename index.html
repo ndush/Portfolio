@@ -14,26 +14,94 @@
   <body>
     <nav class="navbar">
       <div class="navbar-container">
-        <a href="#home" class="navbar-links">Home</a>|
+        <a href="/" class="navbar-links">Home</a>
 
-        <a href="#about" class="navbar-links">About</a>|
+        <a href="#Portfolio" class="navbar-links">Portfolio</a>
 
-        <a href="#portfolio" class="navbar-links">Portfolio</a>|
-
-        <a href="#footer-container" class="navbar-links">Contacts</a>
+        <a href="#contacts" class="navbar-links">Contacts</a>
       </div>
       <div class="social-media">
-        
-        <a href="#" class="fa fa-twitter"></a>  
-       
-        <a href="#" class="fa fa-linkedin"></a>  
-        <a href="#" class="fa fa-instagram"></a>  
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-instagram"></a>
       </div>
     </nav>
 
-    <main></main>
+    <main>
+      <div class="main-container">
+        <div style="background-image: url('images/a.jpg')" class="image">
+          <h2>
+            I am software developer student at Moringa School aspiring to become
+            a full-stack developer
+          </h2>
+        </div>
+      </div>
+    </main>
+    <section id="Portfolio">
+      <div class="portfolio-wrap">
+        <div class="image">
+          <img src="images/c.jpeg" alt="me" />
+        </div>
+        <div class="about">
+          <h1>ABOUT</h1>
+          <span style="font-weight: bold">
+            I am a young lady born and raised in Kenya Portfolio and I come from
+            a family of 6. Growing up I always aspired to become a doctor but
+            that was never to be when I realized that I cannot stand seeing
+            people hurting from accidents especially from having broken body
+            parts. I slowly began to do some soul search and slowly realized
+            that I loved working with machines. When computer studies was
+            introduced in our school I developed an interest in learning and
+            discoveiring all about it. Eventually, I was being drawn into the
+            world of computer technology, the reason I am undertaking the
+            Software development course.
+          </span>
+        </div>
+      </div>
+    </section>
 
-    <footer></footer>
+    <footer id="contacts">
+      <section class="footer-container">
+        <div class="footer-wrap">
+          <h2>Contact Form</h2>
+          <form action="/">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="First Name"
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Last Name"
+            />
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="kenya">Kenya</option>
+              <option value="burundi">Burundi</option>
+              <option value="usa">USA</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write to me.."
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+          <p class="website-rights">© Damaris 2022. All rights reserved</p>
+        </div>
+      </section>
+    </footer>
     <script src="scripts.js"></script>
   </body>
 </html>
