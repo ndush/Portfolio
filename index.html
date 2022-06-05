@@ -63,41 +63,36 @@
     <footer id="contacts">
       <section class="footer-container">
         <div class="footer-wrap">
-          <h2>Contact Form</h2>
-          <form action="/">
-            <label for="fname">First Name</label>
-            <input
-              type="text"
-              id="fname"
-              name="firstname"
-              placeholder="First Name"
-             required/>
-
-            <label for="lname">Last Name</label>
-            <input
-              type="text"
-              id="lname"
-              name="lastname"
-              placeholder="Last Name" required
-            />
-
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="kenya">Kenya</option>
-              <option value="burundi">Burundi</option>
-              <option value="usa">USA</option>
-            </select>
-
-            <label for="message">Message</label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Write to me.."
-              style="height: 200px"required
-            ></textarea>
-
+        
+            <h2>Contact Form</h2>
+          <div id="error_message">
+        </div>
+          <form action="" id="contacts" onSubmit="return validate();">
+            <div class="input-field">
+              <label for="fname">First Name</label>
+              <input type="text" id="firstname" placeholder="First Name" />
+            </div>
+            <div class="input-field">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lastname" placeholder="Last Name" />
+            </div>
+            <div class="input_field">
+                <label for="email">Email</label>
+                <input type="text" placeholder="Email" id="email">
+            </div>
+            <div class="input-field">
+              <label for="message">Message</label>
+              <textarea
+                id="subject"
+                placeholder="Write to me.."
+                style="height: 200px"
+              ></textarea>
+            </div>
+            
             <input type="submit" value="Submit" />
+           
           </form>
+
           <p class="website-rights">© Damaris 2022. All rights reserved</p>
         </div>
       </section>
